@@ -1,6 +1,6 @@
-# datetimepicker
+# vue-datetimepicker
 
-> datetimepicker for vue v2
+> A simple and customize datetimepicker for vue
 
 ## Build Setup
 

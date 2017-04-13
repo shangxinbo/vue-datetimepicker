@@ -11,39 +11,37 @@
     }
 </style>
 <template>
-    <div class="hello">
-        <myDatepicker  
-            :addClass="'date'" 
-            :format="format" 
-            :months="months"
-            :buttons="buttons"
-            :timepicker="true"
-            :min="'2017-04-12'"
-            :disabled="disabled"
-            :sundayFirst="true"></myDatepicker>
+        <div id="app" style="text-align:center">
+        <img src="./assets/logo.png">
+        <div class="hello">
+            <myDatepicker :addClass="'date'" :format="format" :months="months" :buttons="buttons" :timepicker="true" :min="'2017-04-12'"
+                :disabled="disabled" :sundayFirst="true"></myDatepicker>
+        </div>
     </div>
 </template>
 
 <script>
-    import myDatepicker from './datetimepicker'
+    import myDatepicker from './datetimepicker.vue'
     export default {
-        data:function(){
+        data: function () {
             return {
                 init: '2017-04-20',
                 format: 'YYYY-MM-DD HH:mm',
-                weeks:['一', '二', '三', '四', '五','六','日'],
-                months:['1月', '2月', '3月', '4月', '5月', '6月', '7月', '8月', '9月', '10月', '11月', '12月'],
-                buttons:{
-                    ok:'确认'
+                weeks: ['一', '二', '三', '四', '五', '六', '日'],
+                months: ['1月', '2月', '3月', '4月', '5月', '6月', '7月', '8月', '9月', '10月', '11月', '12月'],
+                buttons: {
+                    ok: '确认',
+                    cancel:'取消'
                 },
-                disabled:{
-                    type:'inWeek',
-                    arr:[3,4,6,7]
+                disabled: {
+                    type: 'inWeek',
+                    arr: [3, 4, 6, 7]
                 }
             }
         },
-        components:{
+        components: {
             myDatepicker
         }
     }
+
 </script>
