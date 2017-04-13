@@ -14,8 +14,23 @@
         <div id="app" style="text-align:center">
         <img src="./assets/logo.png">
         <div class="hello">
-            <myDatepicker :addClass="'date'" :format="format" :months="months" :buttons="buttons" :timepicker="true" :min="'2017-04-12'"
-                :disabled="disabled" :sundayFirst="true"></myDatepicker>
+            <div>timepicker</div>
+            <myDatepicker 
+                :addClass="'date'" 
+                :format="format" 
+                :months="months" 
+                :buttons="buttons" 
+                :timepicker="true" 
+                :min="'2017-04-12'"
+                :disabled="disabled" 
+                :sundayFirst="true">
+            </myDatepicker>
+            <br /><br /><br />
+            <div>datepicker</div>
+            <myDatepicker 
+                :addClass="'date'" 
+                :format="format">
+            </myDatepicker>
         </div>
     </div>
 </template>
