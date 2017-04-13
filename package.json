@@ -1,7 +1,7 @@
 {
-  "name": "datetimepicker",
-  "description": "datetimepicker for vue v2",
-  "version": "1.0.0",
+  "name": "vue-datetimepicker",
+  "description": "A simple and customize datetimepicker component for vue",
+  "version": "1.0.1",
   "author": "shangxinbo <314911714@qq.com>",
   "private": true,
   "main":"./src/datetimepicker.vue",
