@@ -128,7 +128,7 @@ export default {
 
   type:String
 
-  desc: the format for the value of input.[__Note:tokens you can use look this__](#### Parse Tokens)
+  desc: the format for the value of input.[__Note:tokens you can use look this__](#Tokens)
 
   default : `'YYYY-MM-DD' `
 
@@ -188,7 +188,7 @@ export default {
 
   value : return the picked value that formatted by your format option 
 
-#### Parse Tokens
+#### <a name="token">Parse Tokens</a>
 
 you can use these tokens in your format
 
