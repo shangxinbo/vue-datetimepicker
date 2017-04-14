@@ -188,7 +188,7 @@ export default {
 
   value : return the picked value that formatted by your format option 
 
-#### <a name="token">Parse Tokens</a>
+#### <a name="Tokens">Parse Tokens</a>
 
 you can use these tokens in your format
 
