@@ -8,15 +8,22 @@
 
 ## Demo
 
-This project is a runtime demo.you can get the demo by this cli:
+This project is a runtime demo.you can get the demo by these clis:
 ```shell
 git clone https://github.com/shangxinbo/vue-datetimepicker.git yourPath
 cd yourPath
 npm install 
-npm run dev   // it use http://localhost:8080 to see the demo 
+npm run dev   // serve with hot reload at http://localhost:8080 to see the demo 
+```
+
+if you want to build production with minification. you can use this:
+
+```shell
+npm run build
 ```
 
 ## Use
+
 It's a **single-file components** for vue.You must use it with webpack,babel and vue-loader to run.So I assume that you have node v4+ and npm v3+   
 
 ```shell
@@ -162,7 +169,7 @@ export default {
 
   e.g.: 
 
-  ```
+  ```javascript
   {
     type:inMonth
     arr:[1,2,3]  //every 1,2,3 date in month is not available
@@ -173,25 +180,10 @@ export default {
   }
   ```
 
-  ​
+#### Events
 
+- change(value)
 
+  triggler: when choose the date or time (click ok buttons).when the input value changed
 
-
-
-## Build Setup
-
-​``` bash
-# install dependencies
-npm install
-
-# serve with hot reload at localhost:8080
-npm run dev
-
-# build for production with minification
-npm run build
-```
-
-For detailed explanation on how things work, consult the [docs for vue-loader](http://vuejs.github.io/vue-loader).
-
-```
+  value : return the picked value that formatted by your format option 

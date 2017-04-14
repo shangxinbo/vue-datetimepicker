@@ -29,7 +29,8 @@
             <div>datepicker</div>
             <myDatepicker 
                 :addClass="'date'" 
-                :format="format">
+                :format="format"
+                @change="valueChange">
             </myDatepicker>
         </div>
     </div>
@@ -56,6 +57,11 @@
         },
         components: {
             myDatepicker
+        },
+        methods:{
+            valueChange(val){
+                console.log(val)
+            }
         }
     }
 
