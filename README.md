@@ -136,15 +136,15 @@ export default {
 
 - __sundayFirst__
 
-  type:Boolean
+  type: Boolean
 
-  desc: set true to make sunday to be the first day of week.or false to make monday the first
+  desc: set true to make sunday be the first day of the week.false to make monday be the first
 
-  default:false
+  default: false
 
 - __min__
 
-  type:String
+  type: String
 
   desc: set the min value for user to choose.__Note that it must be apply to the `format`__
 
@@ -152,7 +152,7 @@ export default {
 
 - __max__
 
-  type:String
+  type: String
 
   desc: set the max value for user to choose.__Note that it must be apply to the `format`
 
@@ -160,7 +160,7 @@ export default {
 
 - __disabled__
 
-  type:Object
+  type: Object
 
   desc: set the disabled day in (month/week) that can't be checked.
 
