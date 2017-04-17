@@ -622,7 +622,7 @@
                 return n < 10 ? '0' + n : n
             },
             doDisabled(days) {
-                if (this.min || this.to) {
+                if (this.min || this.max) {
                     days.forEach((val, index) => {
                         if (this.min && val.moment.isBefore(this.min)) { //TODO 如果this max和format不同
                             val.unavailable = true
